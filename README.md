@@ -1,0 +1,1 @@
+simple static site to provide instruction on how to add blog post to [Membership System Pro's](https://simbed.github.io/msp-showcase/) blog functionality

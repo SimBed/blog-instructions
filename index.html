@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Instructions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+          <h1>Blog Instructions</h1>
+          <p>Read these instructions before working on a blog post to publish on The Space Fitness</p>
+      </div>
+      
+      <div class="content">
+        <ul class="instructions">
+          <li>
+            <strong>Prepare the Blog Post</strong>
+            <p>Write and format the blog post as far as possible in your favourite text editor eg Word. Once prepared, copy into the 'Trix' editor. Formatting options like bold and italics will copy across.</p>
+            <img src="./images/trix-editor.png" alt="trix editor" class="instruction-image">
+            <p>If you don't do it this way, you will encounter frustrations, for example scrolling up to press formatting buttons as the blog gets longer.</p>
+          </li>
+          
+          <li>
+            <strong>Formatting Limitations</strong>
+            <p>Formatting options are limited to those offered by the Trix editor (bold, italics, strikethrough, bulleting).</p>
+            <p>Other formatting options for the blog posts (for example font family, size, color) can be changed in MSP, but not on a post by post basis. Any requested change will affect all blog posts</p>
+          </li>
+
+          <li>
+            <strong>Title</strong>
+            <p>The title is limited to 100 characters and is used in 3 places:</p>
+              <ul class ='sub-list'>
+                <li>the displayed/visible title (placed in an html &lt;h1&gt tag)</li>
+                <li>the content of the &lt;title&gt tag in the html &lt;head&gt;</li>
+                <li>the content of the url, but truncated if it includes a colon (':')</li>
+              </ul>
+              <p>e.g. if the title is "Calisthenics vs Weightlifting: Which is for You?"</p>
+                <ul class ='sub-list'>
+                  <li>the displayed title will be "Calisthenics vs Weightlifting: Which is for You?"</li>
+                  <li>the title tag wil be "Calisthenics vs Weightlifting: Which is for You? | Blog | The Space Fitness"</li>
+                  <li>the url will be https://www.thespacefitness.in/blog/calisthenics-vs-weightlifting</li>
+                </ul>               
+              </p>
+          </li>
+
+          <li>
+            <strong>Don't Use Trix Heading Formatting</strong>
+            <p>For sub-titles in your content, use bold or italics or both</p>
+            <img src="./images/trix-editor-no-heading.png" alt="trix editor no heading" class="instruction-image">
+            <p>Trix will force content formatted as a heading into an &lt;h1&gt tag. For SEO, only the main title should be in an h1 tag.</p>
+          </li>             
+
+          <li>
+            <strong>Description</strong>
+              <p>The description is limted to 160 characters. It will be the content of the &lt;meta name = 'description'&gt; tag in the html &lt;head&gt; and shows up in search.</p>
+          </li>
+          
+          <li>
+            <strong>Published at</strong>
+            <p>If this date is today or in the past, the blog post will be published, meaning it will appear in the publicly visible blog index
+               and be publicly available to read. An empty date or a date in the future will keep the blog unpublished.</p>
+          </li>
+
+          <li>
+            <strong>Images</strong>
+            <ul class ='sub-list'>
+              <li>Prepare any images you wish to include to a suitable size in advance. You cannot adjust the image size within the Trix editor.
+                  Use dimensions suitable for your blog post, but try and keep the file size small.
+                  Run it through an <a href="https://cloudconvert.com/png-to-webp" class="instruction-link">online converter</a> to convert from jpg/png to webp format.
+                  Keep the file size small to optimize performance and minimize storage cost.</li>
+              <li>Name the image file appropriately. It will be used (in human readable form) as the html &lt;img&gt; tag's 'alt' attribute. This is read by screenreaders
+                  and robots and is useful for SEO. For example an image file 'muscle-up.webp' will correspond to an &lt;img&gt; tag with alt='Muscle-up'
+                  and 'muscle-up_in_action.jpg' to alt='Muscle-up in action'.</li>
+              <li>Images will default to being positioned centrally with an optional caption below them.</li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="footer">
+          <p></p>
+      </div>
+    </div>
+  </body>
+</html>
